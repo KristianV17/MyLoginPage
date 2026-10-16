@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add your details - Epic Games</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        /* Vsa pravila za registracijo na enem mestu */
+        .nazaj {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .naslov-levo {
+            text-align: left;
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+        .oznaka {
+            display: block;
+            font-size: 13px;
+            color: #a0a0a0;
+            margin-bottom: 8px;
+        }
+        .dva-stolpca {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .vrstica-kljukica {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 18px;
+            font-size: 13px;
+            color: #e5e5e5;
+            line-height: 1.4;
+            cursor: pointer;
+        }
+        .vrstica-kljukica input {
+            width: 20px;
+            height: 20px;
+            margin-top: 2px;
+            accent-color: #40a0fa;
+            flex-shrink: 0;
+        }
+        .vrstica-kljukica a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .sivo {
+            color: #a0a0a0;
+        }
+    </style>
+</head>
+<body>
+    <div class="glavna-skatla">
+        
+        <a href="login.html" class="nazaj">&lt; &nbsp;Back</a>
+
+        <h2 class="naslov-levo">Add your details</h2>
+
+      <form action="login.html" method="GET">
+            
+            <div class="ohisje-vnosa">
+                <label class="oznaka">Email address</label>
+                <input type="email" value="ghfgf@dfsf.com">
+            </div>
+
+            <div class="dva-stolpca">
+                <div class="ohisje-vnosa">
+                    <label class="oznaka">First name</label>
+                    <input type="text" required>
+                </div>
+                <div class="ohisje-vnosa">
+                    <label class="oznaka">Last name</label>
+                    <input type="text" required>
+                </div>
+            </div>
+
+            <div class="ohisje-vnosa">
+                <label class="oznaka">Create password</label>
+                <input type="password" required>
+            </div>
+
+            <div class="ohisje-vnosa" style="margin-bottom: 25px;">
+                <label class="oznaka">Display Name</label>
+                <input type="text" value="NearbyPrince8970" required>
+            </div>
+
+            <label class="vrstica-kljukica">
+                <input type="checkbox" required>
+                <span>I have read and agree to the <a href="#">Terms of Service</a> and the <a href="#">Epic Games Store End User License Agreement</a> <span style="color: #ffcc00;">*</span></span>
+            </label>
+
+            <label class="vrstica-kljukica">
+                <input type="checkbox">
+                <span>Remember me in games and apps that use Epic Games to sign in <span class="sivo">(optional)</span></span>
+            </label>
+
+            <label class="vrstica-kljukica" style="margin-bottom: 25px;">
+                <input type="checkbox">
+                <span>Send news, surveys, and offers from Epic Games <span class="sivo">(Optional)</span></span>
+            </label>
+
+            <button type="submit" class="glavni-gumb">Continue</button>
+        </form>
+
+        <div class="povezave-spodaj">
+            <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+</body>
+</html>
